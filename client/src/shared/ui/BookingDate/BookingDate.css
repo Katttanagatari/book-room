@@ -1,0 +1,34 @@
+.booking__date {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.booking__date-label {
+  font-size: 11px;
+  font-weight: 600;
+  color: var(--color-text-secondary);
+}
+
+.booking__date-control {
+  width: 150px;
+  height: 40px;
+  padding: 0 16px;
+  display: flex;
+  align-items: center;
+  border: 1px solid #e5e7eb;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.booking__date-control--disabled {
+  color: #e2e8f0;
+  cursor: default;
+}
+
+.booking__date-input {
+  width: 100%;
+  border: 0;
+  outline: 0;
+  font: inherit;
+}

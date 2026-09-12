@@ -1,0 +1,17 @@
+.booking__duration {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.booking__duration-label {
+  font-size: 11px;
+  font-weight: 600;
+  color: var(--color-text-secondary);
+}
+
+.booking__duration-select {
+  width: 120px;
+  height: 40px;
+  padding: 0 16px;
+}

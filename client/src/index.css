@@ -1,0 +1,20 @@
+:root {
+  --color-primary: #0d9488;
+  --color-text: #0f172a;
+  --color-text-secondary: #94a3b0;
+  --color-text-disable: #e2e8f0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  font-family: "Inter", sans-serif;
+}
+
+.container {
+  padding: 0 40px;
+}

@@ -1,0 +1,53 @@
+.cancel-modal {
+  display: flex;
+  flex-direction: column;
+}
+
+.cancel-modal__title {
+  margin: 0 0 8px;
+  font-size: 20px;
+  font-weight: 700;
+  color: #0f172a;
+}
+
+.cancel-modal__subtitle {
+  margin: 0 0 20px;
+  font-size: 14px;
+  line-height: 1.5;
+  color: #64748b;
+}
+
+.cancel-modal__card {
+  background-color: #f8fafc;
+  border-radius: 12px;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 24px;
+}
+
+.cancel-modal__card-title {
+  margin: 0 0 2px;
+  font-size: 15px;
+  font-weight: 600;
+  color: #0f172a;
+}
+
+.cancel-modal__card-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 13px;
+  color: #475569;
+}
+
+.cancel-modal__icon {
+  font-size: 18px !important;
+  color: #64748b;
+}
+
+.cancel-modal__actions {
+  display: flex;
+  gap: 12px;
+}

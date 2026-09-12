@@ -1,0 +1,194 @@
+/* --------------
+  RoomsPage
+*/
+
+/* ----------------
+   OfficeSelector
+*/
+
+.rooms__office-selector {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 20px 0;
+}
+
+.rooms__office-selector::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background-color: #e2e8f0;
+  left: -40px;
+  right: -40px;
+}
+
+.rooms__office-info {
+  display: flex;
+  gap: 14px;
+  align-items: center;
+  font-size: 18px;
+  color: var(--color-text-secondary);
+}
+
+.rooms__office-info--selected {
+  color: var(--color-text);
+}
+
+.rooms__office-info-dot {
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  background-color: #a1a6b5;
+}
+
+.rooms__office-time-value {
+  margin-left: 6px;
+}
+
+/* ----------------
+   RoomsFilters
+*/
+
+.rooms__filters-list {
+  display: flex;
+  gap: 20px;
+  padding: 20px 0;
+  position: relative;
+}
+
+.rooms__filters-list::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background-color: #e2e8f0;
+  left: -40px;
+  right: -40px;
+}
+
+.rooms__filters-list--disabled::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: -40px;
+  right: -40px;
+  background-color: #fbfcfd;
+  z-index: -1;
+}
+
+.rooms__filter {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.rooms__label {
+  font-size: 12px;
+  font-weight: 600;
+  color: #9ca3b3;
+}
+
+.rooms__field {
+  height: 40px;
+  padding: 0 12px;
+
+  display: flex;
+  align-items: center;
+  gap: 8px;
+
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+
+  font-size: 14px;
+  color: #25283a;
+}
+
+.rooms__field svg {
+  font-size: 20px;
+  color: #596174;
+}
+
+/* ----------------
+   RoomsList
+*/
+
+.rooms__list {
+  background-color: #f8fafc;
+  margin-left: -40px;
+  margin-right: -40px;
+
+  padding-left: 40px;
+  padding-right: 40px;
+  height: calc(100vh - 275.5px);
+  padding: 40px;
+}
+
+/* ----------------
+   RoomsList -> Empty
+*/
+
+.rooms__empty {
+  height: 100%;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  text-align: center;
+}
+
+.rooms__empty-icon {
+  width: 120px;
+  height: 120px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  margin-bottom: 16px;
+  border-radius: 50%;
+  background-color: #dffaf5;
+  color: var(--color-primary);
+}
+
+.rooms__empty-icon svg {
+  font-size: 50px;
+}
+
+.rooms__empty-title {
+  margin: 0 0 8px;
+
+  font-size: 22px;
+  font-weight: 600;
+  color: var(--color-text);
+}
+
+.room__empty-text {
+  margin: 0;
+  font-size: 15px;
+  color: var(--color-text-secondary);
+}
+
+/* ----------------
+   RoomsList -> Available
+*/
+
+.rooms__available-text {
+  font-weight: 700;
+  font-size: 22px;
+  margin-bottom: 20px;
+}
+
+.rooms__available {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}

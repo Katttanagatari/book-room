@@ -1,0 +1,26 @@
+.booking__office {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.booking__office-label {
+  font-size: 11px;
+  font-weight: 600;
+  color: var(--color-text-secondary);
+}
+
+.booking__office-control {
+  width: 240px;
+  height: 40px;
+  padding: 0 12px;
+  display: flex;
+  align-items: center;
+  border: 1px solid #e5e7eb;
+  border-radius: 10px;
+}
+
+.booking__office-control--disabled {
+  opacity: 0.5;
+  background-color: #f8fafc;
+}

@@ -1,0 +1,21 @@
+.room-card__info {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+}
+
+.room-card__actions {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.room-card__status-dot {
+  width: 5px;
+  height: 5px;
+  margin-right: 7px;
+  border-radius: 50%;
+  background-color: currentColor;
+  flex-shrink: 0;
+}
